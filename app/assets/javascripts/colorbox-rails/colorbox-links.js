@@ -32,6 +32,7 @@
         href: $(this).data("colorbox-href") || $(this).attr('href'),
         html: $(this).data("colorbox-html") || false,
         inline: $(this).data("colorbox-inline") || false,
+        trapFocus: $(this).data("colorbox-trapfocus") || true,
         opacity: 0.5
       });
     });
@@ -50,6 +51,7 @@
       href: function() { return $(this).data("colorbox-href") || $(this).attr('href') },
       html: function() { return $(this).data("colorbox-html") || false },
       inline: function() { return $(this).data("colorbox-inline") || false },
+      trapFocus: function() { return $(this).data("colorbox-trapfocus") || true},
       opacity: 0.5
     });
   });
